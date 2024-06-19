@@ -79,11 +79,11 @@ flutter:
           weight: 800
 
 flutter_native_splash:
-  color: "#ffffff"
+  # color: "#ffffff"
   android: true
   ios: true
-  web: true
+  web: false
   fullscreen: true
-  image: assets/images/on_boarding_images/Landing.png
-  android_gravity: fill
-  ios_content_mode: scaleAspectFill
+  background_image: assets/images/on_boarding_images/Landing.png
+  # android_gravity: fill
+  # ios_content_mode: scaleAspectFill
