@@ -30,20 +30,20 @@ class TAppTheme {
     inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
   );
 
-  static ThemeData darkTheme = ThemeData(
-    useMaterial3: true,
-    fontFamily: 'Poppins',
-    disabledColor: TColors.grey,
-    brightness: Brightness.dark,
-    primaryColor: TColors.primary,
-    textTheme: TTextTheme.darkTextTheme,
-    chipTheme: TChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: Color.lerp(Color(0xFF0E93F9), Colors.white, 0.5),
-    appBarTheme: TAppBarTheme.darkAppBarTheme,
-    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
-    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
-  );
+  // static ThemeData darkTheme = ThemeData(
+  //   useMaterial3: true,
+  //   fontFamily: 'Poppins',
+  //   disabledColor: TColors.grey,
+  //   brightness: Brightness.dark,
+  //   primaryColor: TColors.primary,
+  //   textTheme: TTextTheme.darkTextTheme,
+  //   chipTheme: TChipTheme.darkChipTheme,
+  //   scaffoldBackgroundColor: Color.lerp(Color(0xFF0E93F9), Colors.white, 0.5),
+  //   appBarTheme: TAppBarTheme.darkAppBarTheme,
+  //   checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
+  //   bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
+  //   elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
+  //   outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
+  //   inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
+  // );
 }

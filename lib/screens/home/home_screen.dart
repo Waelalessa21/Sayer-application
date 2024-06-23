@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:sayeer/common/widgets/gridenant_color/gradient_color.dart';
-import 'package:sayeer/common/appbar/Drawer/DrawerMenu.dart';
+import 'package:sayeer/common/widgets/appbar/Drawer/DrawerMenu.dart';
 import 'package:sayeer/controllers/homeController.dart';
+import 'package:sayeer/screens/home/mahtar_screen.dart';
 import 'package:sayeer/screens/home/widgets/Categories.dart';
 import 'package:sayeer/utils/constants/sizes.dart';
 import 'widgets/search.dart';
 import 'widgets/slider.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:sayeer/utils/constants/image_strings.dart';
-import 'package:sayeer/common/NavBar/CustomeNav.dart';
+import 'package:sayeer/common/widgets/NavBar/CustomeNav.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -32,8 +34,9 @@ class HomeScreen extends StatelessWidget {
                     ),
                     child: TPromoSlider(
                       banners: [
-                        TImages.promoBannerMahtar,
-                        TImages.promoBannerSayerOffer,
+                        BannerModel(
+                            imageUrl: TImages.promoBannerMahtar,
+                            targetUrl: () => Get.to(() => MahtarScreen())),
                       ],
                     ),
                   ),
