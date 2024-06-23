@@ -1,11 +1,19 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../../../../../common/custom_shapes/containers/circular_container.dart';
-import '../../../../../common/images/t_rounded_image.dart';
+import '../../../common/widgets/custom_shapes/containers/circular_container.dart';
+import '../../../common/widgets/images/t_rounded_image.dart';
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../controllers/homeController.dart';
+
+// Define a model for the banner
+class BannerModel {
+  final String imageUrl;
+  final VoidCallback targetUrl;
+
+  BannerModel({required this.imageUrl, required this.targetUrl});
+}
 
 class TPromoSlider extends StatelessWidget {
   const TPromoSlider({
@@ -13,7 +21,7 @@ class TPromoSlider extends StatelessWidget {
     required this.banners,
   });
 
-  final List<String> banners;
+  final List<BannerModel> banners;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +35,11 @@ class TPromoSlider extends StatelessWidget {
               onPageChanged: (index, _) =>
                   controller.updatePageIndicator(index)),
           items: banners
-              .map((url) => TRoundedimage(
-                    imagmeUrl: url,
+              .map((banner) => GestureDetector(
+                    onTap: banner.targetUrl,
+                    child: TRoundedimage(
+                      imagmeUrl: banner.imageUrl,
+                    ),
                   ))
               .toList(),
         ),

@@ -23,7 +23,7 @@ class VerifyPhoneNumScreen extends StatelessWidget {
               SafeArea(
                 bottom: false,
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  padding: const EdgeInsets.symmetric(horizontal: TSizes.md),
                   child: Row(
                     children: [
                       IconButton(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:sayeer/common/custom_shapes/containers/search_container.dart';
+import 'package:sayeer/common/widgets/custom_shapes/containers/search_container.dart';
 import '../../../controllers/homeController.dart';
 
 class HomeSearch extends StatelessWidget {

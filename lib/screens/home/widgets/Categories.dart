@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sayeer/common/CarsList/BrandList.dart';
-import 'package:sayeer/common/products.cart/product_cards.dart';
-import 'package:sayeer/common/texts/section_heading.dart';
+import 'package:sayeer/common/widgets/CarsList/BrandList.dart';
+import 'package:sayeer/common/widgets/products.cart/product_cards.dart';
+import 'package:sayeer/common/widgets/texts/section_heading.dart';
 import 'package:sayeer/utils/constants/colors.dart';
 import 'package:sayeer/utils/constants/image_strings.dart';
 import 'package:sayeer/utils/constants/sizes.dart';
